@@ -59,11 +59,11 @@ class ProfileWindow(wx.Frame):
         self.createImageLabels(panel)
 
         user_label = wx.StaticText(panel, label="Чулкова Валерия", pos=(300, 60))
-        user_font = wx.Font(32, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL)
+        user_font = wx.Font(28, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL)
         user_label.SetFont(user_font)
 
         bio_label = wx.StaticText(panel, label="Биография", pos=(40, 400))
-        bio_font = wx.Font(25, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL)
+        bio_font = wx.Font(24, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL)
         bio_label.SetFont(bio_font)
 
         about_label = wx.StaticText(panel, label="Студентка 2 курса МАИ, М3О-236БВ-24", pos=(40, 435))
@@ -71,7 +71,7 @@ class ProfileWindow(wx.Frame):
         about_label.SetFont(about_font)
 
         skills_label = wx.StaticText(panel, label="Навыки", pos=(40, 490))
-        skills_font = wx.Font(25, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL)
+        skills_font = wx.Font(24, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL)
         skills_label.SetFont(skills_font)
 
         languages_label = wx.StaticText(panel, label="в процессе получения", pos=(40, 525))
@@ -79,7 +79,7 @@ class ProfileWindow(wx.Frame):
         languages_label.SetFont(languages_font)
 
         experience_label = wx.StaticText(panel, label="Опыт", pos=(40, 550))
-        experience_font = wx.Font(25, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL)
+        experience_font = wx.Font(24, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL)
         experience_label.SetFont(experience_font)
 
         developer_label = wx.StaticText(panel, label="web дизайн", pos=(40, 585))
@@ -100,4 +100,5 @@ class MyApp(wx.App):
 
 if __name__ == "__main__":
     app = MyApp()
+
     app.MainLoop()
